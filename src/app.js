@@ -108,38 +108,6 @@ app.post("/login", async(req, res) =>{
 })
 
 
-
-// const bcrypt = require("bcryptjs");
-
-// const securePassword = async (password) =>{
-
-//     const passwordHash = await bcrypt.hash(password, 10);
-//     console.log(passwordHash);
-
-//     const passwordmatch = await bcrypt.compare("thapa@123", passwordHash);
-//     console.log(passwordmatch);
-
-// }
-
-// securePassword("thapa@123");
-
-
-// const jwt = require("jsonwebtoken");
-
-// const createToken = async() => {
-//     const token = await jwt.sign({_id:"5fb86aaf569ea945f8bcd2e1"}, "mynameisshahjadamynameisshahjadamynameisshahjada", {
-//         expiresIn:"2 seconds"
-//     });
-//     console.log(token);
-
-//     const userVer = await jwt.verify(token, "mynameisshahjadamynameisshahjadamynameisshahjada");
-//     console.log(userVer);
-// }
-
-
-// createToken();
-
-
 app.listen(port, () => {
     console.log(`server is running at port no ${port}`);
 })
